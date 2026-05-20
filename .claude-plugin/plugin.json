@@ -1,0 +1,15 @@
+{
+  "name": "seo-visibility",
+  "version": "0.1.0",
+  "description": "Audit a website or web app's SEO visibility and generate a fix-ready HTML report - indexing infrastructure, on-page meta, Open Graph, Core Web Vitals, and mobile usability. Deterministic checks plus stack-specific fix guidance.",
+  "author": {
+    "name": "Arijit Saha",
+    "email": "arijit.saha@zysk.tech"
+  },
+  "repository": "https://github.com/sahaarijit/seo-audit",
+  "license": "MIT",
+  "keywords": [
+    "seo", "audit", "core-web-vitals", "lighthouse", "sitemap",
+    "robots-txt", "open-graph", "meta-tags", "mobile", "visibility"
+  ]
+}

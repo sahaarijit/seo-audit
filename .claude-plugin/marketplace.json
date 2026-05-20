@@ -1,0 +1,26 @@
+{
+  "name": "seo-visibility",
+  "description": "SEO visibility audit plugin for Claude Code",
+  "owner": {
+    "name": "Arijit Saha",
+    "email": "arijit.saha@zysk.tech"
+  },
+  "plugins": [
+    {
+      "name": "seo-visibility",
+      "description": "Audit a website or web app's SEO and generate a fix-ready HTML report - indexing infrastructure, on-page meta, Open Graph, Core Web Vitals, and mobile usability. Deterministic checks plus stack-specific fix guidance.",
+      "version": "0.1.0",
+      "category": "development",
+      "author": {
+        "name": "Arijit Saha",
+        "email": "arijit.saha@zysk.tech"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sahaarijit/seo-audit.git",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/sahaarijit/seo-audit"
+    }
+  ]
+}
