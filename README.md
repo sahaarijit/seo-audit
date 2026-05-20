@@ -19,20 +19,20 @@ Claude Code session so the new command and skills load.
 
 ```
 /plugin marketplace add sahaarijit/seo-audit
-/plugin install seo-visibility@seo-visibility
+/plugin install seo-audit@seo-audit
 ```
 
 The first command adds this repo as a single-plugin marketplace; the second
-installs the plugin from it. `seo-visibility@seo-visibility` =
-`<plugin-name>@<marketplace-name>` - both are `seo-visibility` because the
+installs the plugin from it. `seo-audit@seo-audit` =
+`<plugin-name>@<marketplace-name>` - both are `seo-audit` because the
 marketplace ships exactly this one plugin.
 
 ### From a local clone (development / offline)
 
 ```
-git clone https://github.com/sahaarijit/seo-audit ~/Projects/seo-visibility
-/plugin marketplace add ~/Projects/seo-visibility
-/plugin install seo-visibility@seo-visibility
+git clone https://github.com/sahaarijit/seo-audit ~/Projects/seo-audit
+/plugin marketplace add ~/Projects/seo-audit
+/plugin install seo-audit@seo-audit
 ```
 
 Point `marketplace add` at the directory that contains `.claude-plugin/` (the
@@ -41,43 +41,43 @@ plugin root). Local changes are picked up on the next session restart.
 ### From the zip distributable
 
 ```
-unzip seo-visibility-<version>.zip -d ~/Projects/
-/plugin marketplace add ~/Projects/seo-visibility
-/plugin install seo-visibility@seo-visibility
+unzip seo-audit-<version>.zip -d ~/Projects/
+/plugin marketplace add ~/Projects/seo-audit
+/plugin install seo-audit@seo-audit
 ```
 
 ### Verify the install
 
 ```
 /plugin
-/seo-visibility:seo-audit https://example.com
+/seo-audit:seo-audit https://example.com
 ```
 
-`/plugin` lists installed plugins (you should see `seo-visibility`); the
+`/plugin` lists installed plugins (you should see `seo-audit`); the
 command then runs an end-to-end audit and opens the report.
 
 ## Updating
 
 ```
-/plugin marketplace update seo-visibility
-/plugin install seo-visibility@seo-visibility      # reinstall to pick up the new version
+/plugin marketplace update seo-audit
+/plugin install seo-audit@seo-audit      # reinstall to pick up the new version
 ```
 
 For a local-clone install, `git pull` in the cloned directory, then
-`/plugin marketplace update seo-visibility` followed by restart.
+`/plugin marketplace update seo-audit` followed by restart.
 
 ## Uninstallation
 
 ```
-/plugin uninstall seo-visibility@seo-visibility    # remove the plugin
-/plugin marketplace remove seo-visibility          # also remove the marketplace entry
+/plugin uninstall seo-audit@seo-audit    # remove the plugin
+/plugin marketplace remove seo-audit          # also remove the marketplace entry
 ```
 
-Generated reports in `~/seo-visibility-reports/` are **not** removed by
+Generated reports in `~/seo-audit-reports/` are **not** removed by
 uninstall - delete that directory manually if you want them gone:
 
 ```
-rm -rf ~/seo-visibility-reports
+rm -rf ~/seo-audit-reports
 ```
 
 The Lighthouse package that `npx` cached on first use lives under your npm
@@ -87,7 +87,7 @@ cache (`~/.npm/_npx`); leaving it does no harm, but
 ## Usage
 
 ```
-/seo-visibility:seo-audit https://example.com
+/seo-audit:seo-audit https://example.com
 ```
 
 Runs the pipeline (crawl once → render → Core Web Vitals → evaluate →
@@ -118,7 +118,7 @@ gracefully and the skills can do a best-effort manual pass.
 ## What you get
 
 `report.html` plus `findings.json` (machine-readable) in
-`~/seo-visibility-reports/<host>_<timestamp>/`. Each finding has a status
+`~/seo-audit-reports/<host>_<timestamp>/`. Each finding has a status
 (PASS / WARN / FAIL / SKIPPED / MANUAL), the evidence, and a copy-paste fix.
 MANUAL items (Search Console / Bing / IndexNow) are account-bound and come
 with setup steps rather than a remote pass/fail.

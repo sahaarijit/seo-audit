@@ -1,6 +1,6 @@
 ---
 name: seo-on-page-meta
-description: "Use when a user is working on on-page SEO metadata or social previews - title tag, meta description, canonical, meta robots/noindex, viewport, Open Graph, or Twitter/X cards - especially as a follow-up to an /seo-visibility:seo-audit report, or to do a best-effort meta audit when the audit engine cannot run on this surface. Triggers on 'fix my meta tags', 'my link preview looks wrong on Twitter/LinkedIn', 'add Open Graph to my Next.js app', 'why is my page noindex', 'title too long'."
+description: "Use when a user is working on on-page SEO metadata or social previews - title tag, meta description, canonical, meta robots/noindex, viewport, Open Graph, or Twitter/X cards - especially as a follow-up to an /seo-audit:seo-audit report, or to do a best-effort meta audit when the audit engine cannot run on this surface. Triggers on 'fix my meta tags', 'my link preview looks wrong on Twitter/LinkedIn', 'add Open Graph to my Next.js app', 'why is my page noindex', 'title too long'."
 ---
 
 # SEO: On-Page Meta & Social Previews
@@ -73,7 +73,7 @@ if the tool can) and inspect the `<head>` yourself, reporting in the same
   `twitter:description`, `twitter:image`.
 
 State clearly it's a degraded manual pass; recommend re-running
-`/seo-visibility:seo-audit` on Claude Code / Desktop Local for the
+`/seo-audit:seo-audit` on Claude Code / Desktop Local for the
 deterministic result. For cache-stuck previews, point users at the
 platform debuggers (Facebook Sharing Debugger, LinkedIn Post Inspector) to
 force a re-scrape after the fix.

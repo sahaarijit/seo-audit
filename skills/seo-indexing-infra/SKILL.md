@@ -1,6 +1,6 @@
 ---
 name: seo-indexing-infra
-description: "Use when a user is working on search-engine discovery and indexing infrastructure - sitemaps, robots.txt, Google Search Console, Bing Webmaster Tools, or IndexNow - especially as a follow-up to an /seo-visibility:seo-audit report, or to do a best-effort indexing audit when the audit engine cannot run on this surface. Triggers on questions like 'why isn't Google indexing my site', 'fix my robots.txt', 'add a sitemap to my Next.js app', 'set up IndexNow', 'is my site discoverable'."
+description: "Use when a user is working on search-engine discovery and indexing infrastructure - sitemaps, robots.txt, Google Search Console, Bing Webmaster Tools, or IndexNow - especially as a follow-up to an /seo-audit:seo-audit report, or to do a best-effort indexing audit when the audit engine cannot run on this surface. Triggers on questions like 'why isn't Google indexing my site', 'fix my robots.txt', 'add a sitemap to my Next.js app', 'set up IndexNow', 'is my site discoverable'."
 ---
 
 # SEO: Indexing & Discovery Infrastructure
@@ -83,5 +83,5 @@ the same `{check, status, evidence, fix}` shape:
    say so; don't report a false negative.
 
 Be explicit that this is a degraded manual pass and recommend re-running
-`/seo-visibility:seo-audit` on Claude Code / Desktop Local for the full
+`/seo-audit:seo-audit` on Claude Code / Desktop Local for the full
 deterministic result.

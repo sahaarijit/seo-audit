@@ -1,5 +1,5 @@
 ---
-description: "Audit a website or web app's SEO visibility and produce a fix-ready HTML report. Use whenever the user gives a URL and asks why it isn't ranking, isn't found on Google, has weak SEO, or wants an SEO/visibility/discoverability check, meta-tag/Open-Graph/sitemap/robots/Core-Web-Vitals/mobile audit - even if they don't say the word 'SEO'. Invocation: /seo-visibility:seo-audit <URL>"
+description: "Audit a website or web app's SEO visibility and produce a fix-ready HTML report. Use whenever the user gives a URL and asks why it isn't ranking, isn't found on Google, has weak SEO, or wants an SEO/visibility/discoverability check, meta-tag/Open-Graph/sitemap/robots/Core-Web-Vitals/mobile audit - even if they don't say the word 'SEO'. Invocation: /seo-audit:seo-audit <URL>"
 ---
 
 Run a complete, deterministic SEO visibility audit for the URL the user gave
@@ -13,7 +13,7 @@ fixes.
 - The URL is `$ARGUMENTS`. Trim whitespace. If it has no scheme, the engine
   adds `https://` itself - pass it through as-is.
 - If `$ARGUMENTS` is empty: print
-  `Usage: /seo-visibility:seo-audit <URL>` and stop. Do not prompt.
+  `Usage: /seo-audit:seo-audit <URL>` and stop. Do not prompt.
 - The Python scripts are the source of truth for pass/fail. Your job is to
   run them, then explain and tailor the fixes - never invent or override a
   verdict.

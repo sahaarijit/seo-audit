@@ -1,6 +1,6 @@
 ---
 name: seo-performance-mobile
-description: "Use when a user is working on site speed, Core Web Vitals (LCP, CLS, INP/TBT), Lighthouse performance, or mobile usability (viewport, tap targets, font size, responsive layout) - especially as a follow-up to an /seo-visibility:seo-audit report, or to reason about performance/mobile SEO when the audit engine cannot run on this surface. Triggers on 'my LCP is bad', 'improve PageSpeed score', 'fix Cumulative Layout Shift', 'site is slow on mobile', 'tap targets too small', 'Core Web Vitals failing'."
+description: "Use when a user is working on site speed, Core Web Vitals (LCP, CLS, INP/TBT), Lighthouse performance, or mobile usability (viewport, tap targets, font size, responsive layout) - especially as a follow-up to an /seo-audit:seo-audit report, or to reason about performance/mobile SEO when the audit engine cannot run on this surface. Triggers on 'my LCP is bad', 'improve PageSpeed score', 'fix Cumulative Layout Shift', 'site is slow on mobile', 'tap targets too small', 'Core Web Vitals failing'."
 ---
 
 # SEO: Performance & Mobile
@@ -71,5 +71,5 @@ fabricate metrics. Instead:
   hero image format/size, number of third-party scripts, fonts.
 - Give the user the qualitative risk list and the fixes above.
 - Tell them to get real numbers from `pagespeed.web.dev` (field + lab) or by
-  re-running `/seo-visibility:seo-audit` on Claude Code / Desktop Local, and
+  re-running `/seo-audit:seo-audit` on Claude Code / Desktop Local, and
   to confirm field data in Search Console's Core Web Vitals report.

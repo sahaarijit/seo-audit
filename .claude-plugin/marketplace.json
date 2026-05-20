@@ -1,5 +1,5 @@
 {
-  "name": "seo-visibility",
+  "name": "seo-audit",
   "description": "SEO visibility audit plugin for Claude Code",
   "owner": {
     "name": "Arijit Saha",
@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "seo-visibility",
+      "name": "seo-audit",
       "description": "Audit a website or web app's SEO and generate a fix-ready HTML report - indexing infrastructure, on-page meta, Open Graph, Core Web Vitals, and mobile usability. Deterministic checks plus stack-specific fix guidance.",
       "version": "0.1.0",
       "category": "development",

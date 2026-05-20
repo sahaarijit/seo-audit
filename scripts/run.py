@@ -44,7 +44,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Run the full SEO audit pipeline")
     ap.add_argument("url", help="site URL to audit")
     ap.add_argument("--out-dir", default=None,
-                    help="output dir (default ~/seo-visibility-reports/...)")
+                    help="output dir (default ~/seo-audit-reports/...)")
     ap.add_argument("--no-lighthouse", action="store_true",
                     help="skip Core Web Vitals (faster)")
     ap.add_argument("--no-chrome", action="store_true",
@@ -61,7 +61,7 @@ def main(argv=None):
         out = pathlib.Path(args.out_dir).expanduser().resolve()
     else:
         stamp = time.strftime("%Y%m%d-%H%M%S", time.gmtime())
-        out = (pathlib.Path.home() / "seo-visibility-reports"
+        out = (pathlib.Path.home() / "seo-audit-reports"
                / f"{slug(url)}_{stamp}")
     out.mkdir(parents=True, exist_ok=True)
 

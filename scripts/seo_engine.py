@@ -32,7 +32,7 @@ from urllib.parse import urljoin, urlparse
 
 UA = (
     "Mozilla/5.0 (compatible; SEOVisibilityBot/1.0; "
-    "+https://github.com/seo-visibility-plugin) Chrome/126 Safari/537.36"
+    "+https://github.com/seo-audit-plugin) Chrome/126 Safari/537.36"
 )
 MAX_HTML_BYTES = 3_000_000      # cap stored HTML so snapshot.json stays sane
 MAX_SITEMAP_BYTES = 12_000_000  # read budget per sitemap file
